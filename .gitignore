@@ -1,0 +1,8 @@
+node_modules/
+DB.Browser.for.SQLite-v3.13.1-win64.msi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+*.log
+
