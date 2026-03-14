@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Realtime Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <div id="login-screen" class="login-container">
+
+        <div class="card login-card">
+            <h1 class="app-title">Realtime Chat</h1>
+            <p class="app-subtitle">Pick a name and start chatting instantly.</p>
+
+            <div class="login-box">
+                <input id="usernameInput" placeholder="Choose a username" autocomplete="off">
+                <button id="joinBtn">Join chat</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="chat-screen" class="chat-container">
+
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <span class="app-title small">Realtime Chat</span>
+                <span id="chatUser" class="user-pill"></span>
+            </div>
+            <div class="top-bar-right">
+                <span id="connectionStatus" class="status">Disconnected</span>
+            </div>
+        </div>
+
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <div class="input-area">
+            <button id="emojiToggle" class="icon-btn" type="button" aria-label="Add emoji">😊</button>
+            <div class="input-wrapper">
+                <input id="messageInput" placeholder="Type a message and press Enter" autocomplete="off">
+                <div id="emojiPanel" class="emoji-panel" aria-hidden="true">
+                    <button type="button" class="emoji-item">😀</button>
+                    <button type="button" class="emoji-item">😁</button>
+                    <button type="button" class="emoji-item">😂</button>
+                    <button type="button" class="emoji-item">🤣</button>
+                    <button type="button" class="emoji-item">😊</button>
+                    <button type="button" class="emoji-item">😍</button>
+                    <button type="button" class="emoji-item">😎</button>
+                    <button type="button" class="emoji-item">🤔</button>
+                    <button type="button" class="emoji-item">😇</button>
+                    <button type="button" class="emoji-item">🙌</button>
+                    <button type="button" class="emoji-item">👍</button>
+                    <button type="button" class="emoji-item">🔥</button>
+                    <button type="button" class="emoji-item">💯</button>
+                    <button type="button" class="emoji-item">🎉</button>
+                    <button type="button" class="emoji-item">❤️</button>
+                </div>
+            </div>
+            <button id="sendBtn" disabled>Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
